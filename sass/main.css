@@ -25,7 +25,7 @@ ul {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 76px;
   line-height: 31px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -36,12 +36,8 @@ ul {
   text-decoration: none;
 }
 
-.logo {
-  color: #000000;
-}
-
 .logo__studio {
-  color: #FFFFFF;
+  color: red;
 }
 
 .logo__web {
@@ -86,12 +82,6 @@ header {
 
 .navigation__list > li:not(:last-child) {
   margin-right: 50px;
-}
-
-@media screen and (min-width: 400px) and (max-width: 500px) {
-  .navigation__list {
-    display: none;
-  }
 }
 
 .navigation__link--inactive, .navigation__link--active {

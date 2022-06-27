@@ -23,6 +23,9 @@ header {
     & > li:not(:last-child) {
         margin-right: 50px;
     }
+    @media screen and (min-width: 400px) and (max-width: 500px) {
+        display: none;
+    }
 }
 
 .navigation__link--inactive, .navigation__link--active  {
