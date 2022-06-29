@@ -27,6 +27,12 @@
             </li>
           </ul>
         </nav>
+        <svg class="navigation__menu--mobile">
+          <use href="./images/symbol-defs.svg#mobile-menu-open"></use>
+        </svg>
+        <!-- <svg class="navigation__menu--mobile">
+          <use href="./images/symbol-defs.svg#mobile-menu-close"></use>
+        </svg> -->
         <ul class="contacts">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -231,6 +237,7 @@
                 src="images/member1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
+                class="team__mobile-member-image"
               />
               <div class="team__card-content">
                 <h3 class="team__member-name">Игорь Демьяненко</h3>
@@ -268,7 +275,7 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img src="images/member2.jpg" alt="Ольга Репина" width="270" />
+              <img src="images/member2.jpg" alt="Ольга Репина" width="270" class="team__mobile-member-image"/>
               <div class="team__card-content">
                 <h3 class="team__member-name">Ольга Репина</h3>
                 <p class="team__member-position">Frontend Developer</p>
@@ -305,7 +312,7 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img src="images/member3.jpg" alt="Николай Тарасов" width="270" />
+              <img src="images/member3.jpg" alt="Николай Тарасов" width="270" class="team__mobile-member-image"/>
               <div class="team__card-content">
                 <h3 class="team__member-name">Николай Тарасов</h3>
                 <p class="team__member-position">Marketing</p>
@@ -342,7 +349,7 @@
               </div>
             </li>
             <li class="team__member-card">
-              <img src="images/member4.jpg" alt="Михаил Ермаков" width="270" />
+              <img src="images/member4.jpg" alt="Михаил Ермаков" width="270" class="team__mobile-member-image"/>
               <div class="team__card-content">
                 <h3 class="team__member-name">Михаил Ермаков</h3>
                 <p class="team__member-position">UI Designer</p>
@@ -434,8 +441,8 @@
     <!-- Footer Part -->
     <footer>
       <div class="container footer__container">
-        <address>
-          <a href="/index.html" class="logo__studio"><span class="logo__web">Web</span>Studio</a>
+        <address class="footer__address--mobile">
+          <a href="/index.html" class="logo__studio footer__logo--mobile"><span class="logo__web">Web</span>Studio</a>
           <ul class="contact-details">
             <li>
               <a href="https://cutt.ly/UJb5n39" class="contact-details__address"><span

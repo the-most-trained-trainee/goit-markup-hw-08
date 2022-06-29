@@ -6,12 +6,41 @@ footer {
 
 .footer__container {
     display: flex;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        justify-content: center;;
+        flex-direction: column;
+    }
+}
+
+.footer__address--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer__logo--mobile {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
 
 .contact-details {
     padding-top: 20px;
     & li:nth-child(n+2) {
         padding-top: 9px;
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            padding-top: 8px;
+        }
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -21,6 +50,9 @@ footer {
     transition: color $cubic-standard;
     &:hover, &:focus {
         color: $active-color;
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: block;
     }
 }
 
@@ -33,16 +65,34 @@ footer {
     &:focus {
         color: $active-color;
     }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: block;
+    }
 }
 
 .footer-networks__container {
     display: inline-block;
     margin-top: 12px;
     margin-left: 70px;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .footer-networks__heading {
     @include font-set ($font-weight: 700, $text-align: left, $transform: uppercase);
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
 }
 
 .footer-network__list {
@@ -91,16 +141,32 @@ footer {
     width: 570px;
     margin-top: 12px;
     margin-left: auto;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-top: 60px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 .footer-form__container {
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .footer-form__heading {
     @include font-set ($font-weight: 700, $text-align: left, $transform: uppercase);
     margin-bottom: 20px;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .footer-form__submit-button {
@@ -129,6 +195,11 @@ footer {
         background-image: url(../images/icon-send.svg);
         background-size: contain;
     }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: inline-flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 #footer-form__mail {
@@ -147,5 +218,15 @@ footer {
     }
     .footer-form__input-focus:focus-within & {
         border-color: $active-color;
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer-form__input-focus {
+        margin-bottom: 20px;
+
     }
 }

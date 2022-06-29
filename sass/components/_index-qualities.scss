@@ -4,6 +4,14 @@
     & h2 {
         display: none;
     }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-top: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+        
+    }
 }
 
 .qualities__list {
@@ -11,10 +19,26 @@
     justify-content: space-between;
     & li {
         width: 270px;
+      
     }
     & svg {
         width: 70px;
         height: 70px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        flex-direction: column;
+        
+        & li {
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-child(4n) {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -27,14 +51,29 @@
     background-color: $secondary-background-color;
     margin-bottom: 30px;
     transition: box-shadow $cubic-standard;
+    border-radius: 4px;
     .qualities__list li:hover & {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+       
+        .qualities__list li:hover & {
+            box-shadow: none;
+        }
     }
 }
 
 .qualities__heading {
-    @include font-set ($font-weight: 700, $line-height: 14px, $text-align: left, $letter-spacing: 0.03em, $color: $main-text-color, $transform: uppercase);
+    @include font-set ($font-weight: 700, $text-align: left, $letter-spacing: 0.03em, $color: $main-text-color, $transform: uppercase);
     padding-bottom: 10px;
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .qualities__text {

@@ -4,9 +4,22 @@
     margin-top: 50px;
     & li {
         margin: 0px;
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            margin-bottom: 30px;
+            &:nth-child(n+5) {
+                margin-bottom: 0;
+            }
+        }
     }
     & li:not(:last-child) {
         margin-right: 30px;
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
@@ -19,6 +32,11 @@
     &:hover, &:focus {
         border-color: $active-color;
         cursor: pointer;
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 210px;
+        display: flex;
+        justify-content: center;
     }
 }
 

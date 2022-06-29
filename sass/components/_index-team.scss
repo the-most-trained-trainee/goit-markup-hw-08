@@ -2,10 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-top: 30px;
+        flex-direction: column;
+    }
 }
 
 .team__background {
     background-color: $secondary-background-color;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-top: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .team__member-card {
@@ -17,6 +26,22 @@
     border-bottom-right-radius: 4px;
     &:nth-child(4n) {
         margin-right: 0;
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .team__mobile-member-image {
+        width: 450px;
+        height: 460px;
     }
 }
 
@@ -48,6 +73,9 @@
     }
     & li:not(:last-child) {
         margin-right: 10px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        margin-bottom: 24px;
     }
 }
 
