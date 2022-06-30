@@ -207,6 +207,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__address--mobile {
