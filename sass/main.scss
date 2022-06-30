@@ -9,25 +9,16 @@ ul {
 }
 
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-width: 450px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        width: 450px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 @import "./utils/variables";
@@ -42,8 +33,5 @@ ul {
 @import "./components/portfolio";
 
 .section-header {
-    @include font-set ($font-weight: 700, $font-size: 36px, $line-height: 42px, $color: $main-text-color);
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        @include font-set ($font-size: 28px, $font-weight: 700, $line-height: 33px, $color: $main-text-color)
-    }
+    @include font-set ($font-size: 28px, $font-weight: 700, $line-height: 33px, $color: $main-text-color);
 }

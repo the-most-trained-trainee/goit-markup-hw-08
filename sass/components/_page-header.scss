@@ -2,33 +2,51 @@ header {
     border-bottom: 1px solid $border-color;
 }
 
+
 .header__container {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        justify-content: space-between;
-    }
+    justify-content: space-between;
 }
+// .header__container {
+//     display: flex;
+//     align-items: center;
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         justify-content: space-between;
+//     }
+// }
 
 .navigation {
     display: flex;
     align-items: center;
     margin-right: auto;
-    // mobile 
 }
 
 .navigation__list {
-    display: inline-block;
+    display: none;
     & > li {
         display: inline-block;
     }
     & > li:not(:last-child) {
         margin-right: 50px;
     }
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        display: none;
-    }
 }
+// .navigation__list {
+//     display: inline-block;
+//     & > li {
+//         display: inline-block;
+//     }
+//     & > li:not(:last-child) {
+//         margin-right: 50px;
+//     }
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         display: none;
+//     }
+// }
+
+
+
+
 
 .navigation__link--inactive, .navigation__link--active  {
     display: inline-block;
@@ -65,24 +83,34 @@ header {
 }
 
 .navigation__menu--mobile {
-    display: none;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        display: inline-block;
-        fill: black;
-        width: 40px;
-        height: 40px;
-    }
+    display: inline-block;
+    fill: black;
+    width: 40px;
+    height: 40px;
 }
+// .navigation__menu--mobile {
+//     display: none;
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         display: inline-block;
+//         fill: black;
+//         width: 40px;
+//         height: 40px;
+//     }
+// }
+
 
 .contacts {
-    display: flex;
-    & li:last-child {
-        margin-left: 30px;
-    }
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        display: none;
-    }
+    display: none;
 }
+// .contacts {
+//     display: flex;
+//     & li:last-child {
+//         margin-left: 30px;
+//     }
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         display: none;
+//     }
+// }
 
 .contacts__icon {
     fill: $secondary-text-color;

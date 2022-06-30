@@ -1,44 +1,74 @@
 .client {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 50px;
     & li {
         margin: 0px;
-        @media screen and (min-width: 480px) and (max-width: 768px) {
-            margin-bottom: 30px;
-            &:nth-child(n+5) {
-                margin-bottom: 0;
-            }
+        margin-bottom: 30px;
+        &:nth-child(n+5) {
+            margin-bottom: 0;
         }
     }
     & li:not(:last-child) {
         margin-right: 30px;
-        @media screen and (min-width: 480px) and (max-width: 768px) {
-            margin-right: 0;
-        }
-    }
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        justify-content: space-between;
-        flex-wrap: wrap;
+        margin-right: 0;
     }
 }
 
+// .client {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 50px;
+//     & li {
+//         margin: 0px;
+//         @media screen and (min-width: 480px) and (max-width: 768px) {
+//             margin-bottom: 30px;
+//             &:nth-child(n+5) {
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+//     & li:not(:last-child) {
+//         margin-right: 30px;
+//         @media screen and (min-width: 480px) and (max-width: 768px) {
+//             margin-right: 0;
+//         }
+//     }
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//     }
+// }
+
 .client__card {
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 210px;
     border: 1px solid $inactive-pict-color;
     border-radius: 4px;
-    width: 170px;
     transition: border-color $cubic-standard;
     &:hover, &:focus {
         border-color: $active-color;
         cursor: pointer;
     }
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        width: 210px;
-        display: flex;
-        justify-content: center;
-    }
 }
+// .client__card {
+//     display: block;
+//     border: 1px solid $inactive-pict-color;
+//     border-radius: 4px;
+//     width: 170px;
+//     transition: border-color $cubic-standard;
+//     &:hover, &:focus {
+//         border-color: $active-color;
+//         cursor: pointer;
+//     }
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         width: 210px;
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
 
 .client__pict {
     fill: $inactive-pict-color;

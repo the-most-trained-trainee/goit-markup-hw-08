@@ -5,11 +5,7 @@
 }
 
 .activities__section {
-    padding-top: 0;
-    padding-bottom: 94px;
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        display: none;
-    }
+    display: none;
 }
 
 .activities__description {
