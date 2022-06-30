@@ -53,7 +53,7 @@ header {
 
 .header__container {
   display: block;
-  width: 480px;
+  max-width: 480px;
   padding-top: 10px;
   padding-bottom: 9px;
   padding-left: 15px;
