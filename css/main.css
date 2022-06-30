@@ -892,20 +892,10 @@ footer {
 }
 
 .qualities__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
 }
 
 .qualities__list li {
-  width: 270px;
   margin-bottom: 30px;
   width: 100%;
   display: -webkit-box;
@@ -925,21 +915,18 @@ footer {
 }
 
 .qualities__list svg {
+  display: block;
   width: 70px;
   height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .qualities__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 450px;
+  display: block;
+  max-width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -960,9 +947,6 @@ footer {
   letter-spacing: 0.03em;
   color: #212121;
   text-transform: uppercase;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
