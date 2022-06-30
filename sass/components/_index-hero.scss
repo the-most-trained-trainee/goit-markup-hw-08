@@ -1,8 +1,10 @@
 .hero-section {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-img-mobile.jpg);
+    url(../images/mobile-background-1x.jpg);
     background-color: $hero-bacground-color;
     background-size: cover;
+
+
     background-position: center;
     background-repeat: no-repeat;
     max-width: 480px;
@@ -13,6 +15,17 @@
     padding-top: 118px;
     padding-bottom: 118px;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/mobile-background-2x.jpg);
+    }
+}
+
+
 
 .hero-section__text {
     @include font-set($font-weight: 900, $font-size: 26px, $line-height: 42px, $letter-spacing: 0.06em, $transform: uppercase);
