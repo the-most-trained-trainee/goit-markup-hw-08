@@ -12,8 +12,11 @@
     padding-bottom: 60px;
 }
 
+
+
 .team__member-card {
-    width: 450px;
+    display: block;
+    max-width: 450px;
     margin-bottom: 30px;
     margin-right: 0;
     background-color: $main-color;
@@ -26,10 +29,14 @@
     }
 }
 
+
 .team__mobile-member-image {
-    width: 450px;
-    height: 460px;
+    display: block;
+    max-width: 450px;
+    
 }
+
+
 
 .team__card-content {
     padding-top: 30px;

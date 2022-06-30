@@ -11,8 +11,8 @@ ul {
 .container {
   display: block;
   max-width: 450px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1041,7 +1041,8 @@ footer {
 }
 
 .team__member-card {
-  width: 450px;
+  display: block;
+  max-width: 450px;
   margin-bottom: 30px;
   margin-right: 0;
   background-color: #FFFFFF;
@@ -1057,8 +1058,8 @@ footer {
 }
 
 .team__mobile-member-image {
-  width: 450px;
-  height: 460px;
+  display: block;
+  max-width: 450px;
 }
 
 .team__card-content {
