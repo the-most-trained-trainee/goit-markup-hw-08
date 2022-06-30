@@ -1,23 +1,7 @@
 %logo-default {
     @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 24px, $line-height: 28px);
-    display: inline-block;
-    margin-right: 92px;
     text-decoration: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
-
-// %logo-default {
-//     @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 26px, $line-height: 31px);
-//     display: inline-block;
-//     margin-right: 92px;
-//     text-decoration: none;
-//     @media screen and (min-width: 480px) and (max-width: 768px) {
-//         @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 24px, $line-height: 28px);
-//         margin-top: 15px;
-//         margin-bottom: 15px;
-//     }
-// }
 
 .logo {
     @extend %logo-default;
@@ -32,3 +16,15 @@
 .logo__web {
     color: $active-color;
 }
+
+// %logo-default {
+//     @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 26px, $line-height: 31px);
+//     display: inline-block;
+//     margin-right: 92px;
+//     text-decoration: none;
+//     @media screen and (min-width: 480px) and (max-width: 768px) {
+//         @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 24px, $line-height: 28px);
+//         margin-top: 15px;
+//         margin-bottom: 15px;
+//     }
+// }
