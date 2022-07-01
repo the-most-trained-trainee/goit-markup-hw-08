@@ -10,7 +10,8 @@ ul {
 
 .container {
   display: block;
-  max-width: 450px;
+  width: 100%;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -933,6 +934,7 @@ footer {
 
 .qualities__card {
   display: block;
+  width: 100%;
   max-width: 450px;
   height: 120px;
   background-color: #F5F4FA;
