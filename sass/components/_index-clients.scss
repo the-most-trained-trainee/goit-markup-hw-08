@@ -1,19 +1,18 @@
-// 450
+// 450 - 
+// 210/450 - 46.66
+// 106/210 - 50.48
 .client {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 50px;
     
     & li {
-        // 210 
-        width: 46.66%;
+        display: inline-block;
+     
 
         margin-bottom: 30px;
-        flex-basis: 40%;
     }
     
     & li:nth-last-of-type(-n+2) {
@@ -47,12 +46,11 @@
 // }
 
 .client__card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 100%;
+ 
 
-    max-width: 210px;
-    height: 90px;
+
     border: 1px solid $inactive-pict-color;
     border-radius: 4px;
     transition: border-color $cubic-standard;
@@ -79,11 +77,14 @@
 // }
 
 .client__pict {
+    display: inline-block;
 
     fill: $inactive-pict-color;
-    width: 50.48%;
-    // width: 106px;
-    // height: 60px;
+    width: 106px;
+    height: 60px;
+
+    margin: 16px 52px;
+
   
     transition: fill $cubic-standard;
     .client__card:hover & {
