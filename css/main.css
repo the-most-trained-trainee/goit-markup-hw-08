@@ -389,7 +389,7 @@ footer {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 450px;
+  width: 100%;
   margin-top: 60px;
   margin-left: auto;
 }
@@ -476,7 +476,7 @@ footer {
 
 #footer-form__mail {
   display: inline-block;
-  width: 450px;
+  width: 100%;
   background-color: #212121;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1060,7 +1060,6 @@ footer {
 .team__mobile-member-image {
   display: block;
   width: 100%;
-  max-width: 450px;
 }
 
 .team__card-content {
