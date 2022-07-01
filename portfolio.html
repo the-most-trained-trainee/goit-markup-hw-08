@@ -17,16 +17,23 @@
           <a href="/index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
           <ul class="navigation__list">
             <li>
-              <a href="./index.html" class="navigation__link--inactive">Студия</a>
+              <a href="./index.html" class="navigation__link--active">Студия</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="navigation__link--active">Портфолио</a>
+              <a href="./portfolio.html" class="navigation__link--inactive">Портфолио</a>
             </li>
             <li>
               <a href="" class="navigation__link--inactive">Контакты</a>
             </li>
           </ul>
+          <svg class="navigation__menu--mobile">
+            <use href="./images/symbol-defs.svg#mobile-menu-open"></use>
+          </svg>
         </nav>
+        
+        <!-- <svg class="navigation__menu--mobile">
+          <use href="./images/symbol-defs.svg#mobile-menu-close"></use>
+        </svg> -->
         <ul class="contacts">
           <li>
             <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -73,12 +80,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project1-m-1x.jpg 450w, ./images/project1-m-2x.jpg 900w" src="./images/project1-m-1x.jpg" alt="Project Технокряк" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -94,12 +96,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project2-m-1x.jpg 450w, ./images/project2-m-2x.jpg 900w" src="./images/project2-m-1x.jpg" alt="Project New Orlean vs Golden Star" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -115,12 +112,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project3-m-1x.jpg 450w, ./images/project3-m-2x.jpg 900w" src="./images/project3-m-1x.jpg" alt="Project Ресторан Seafood" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -136,12 +128,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project4-m-1x.jpg 450w, ./images/project4-m-2x.jpg 900w" src="./images/project4-m-1x.jpg" alt="Project Prime" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -157,12 +144,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project5-m-1x.jpg 450w, ./images/project5-m-2x.jpg 900w" src="./images/project5-m-1x.jpg" alt="Project Boxes" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -178,12 +160,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project6-m-1x.jpg 450w, ./images/project6-m-2x.jpg 900w" src="./images/project6-m-1x.jpg" alt="Project Inspiration has no Borders" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -199,12 +176,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project7-m-1x.jpg 450w, ./images/project7-m-2x.jpg 900w" src="./images/project7-m-1x.jpg" alt="Project Издание Limited Edition" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -220,12 +192,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project8-m-1x.jpg 450w, ./images/project8-m-2x.jpg 900w" src="./images/project8-m-1x.jpg" alt="Project Проект LAB" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -241,12 +208,7 @@
             <li class="projects__card">
               <div class="projects__container">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/Project-9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    class="projects__image"
-                  />
+                  <img srcset="./images/project9-m-1x.jpg 450w, ./images/project9-m-2x.jpg 900w" src="./images/project9-m-1x.jpg" alt="Project Growing Business" class="team__mobile-member-image"/>
                   <p class="projects__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -266,8 +228,11 @@
     <!-- Footer Part -->
     <footer>
       <div class="container footer__container">
-        <address>
-          <a href="/index.html" class="logo__studio"><span class="logo__web">Web</span>Studio</a>
+
+        <address class="footer__address--mobile">
+
+          <a href="/index.html" class="logo__studio footer__logo--mobile"><span class="logo__web">Web</span>Studio</a>
+
           <ul class="contact-details">
             <li>
               <a href="https://cutt.ly/UJb5n39" class="contact-details__address"><span
@@ -280,7 +245,9 @@
               <a href="tel:+380961111111" class="contact-details__communication">+38 099 111 11 11</a>
             </li>
           </ul>
+
         </address>
+
         <div class="footer-networks__container">
           <h3 class="footer-networks__heading">присоединяйтесь</h3>
           <ul class="footer-network__list">
