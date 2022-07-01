@@ -1,18 +1,15 @@
 .client {
+    margin-left: 15px;
+    margin-right: 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
     & li {
-        margin: 0px;
         margin-bottom: 30px;
-        &:nth-child(n+5) {
-            margin-bottom: 0;
-        }
     }
-    & li:not(:last-child) {
-        margin-right: 30px;
-        margin-right: 0;
+    & li:nth-last-of-type(-n+2) {
+        margin-bottom: 0px;
     }
 }
 
@@ -44,7 +41,7 @@
 .client__card {
     display: flex;
     justify-content: center;
-    width: 210px;
+    max-width: 210px;
     border: 1px solid $inactive-pict-color;
     border-radius: 4px;
     transition: border-color $cubic-standard;
