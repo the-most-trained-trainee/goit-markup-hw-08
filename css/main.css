@@ -11,6 +11,8 @@ ul {
 .container {
   display: block;
   max-width: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1170,7 +1172,7 @@ footer {
 }
 
 .client li {
-  display: inline-block;
+  width: 46.66%;
   margin-bottom: 30px;
 }
 
@@ -1193,11 +1195,14 @@ footer {
 }
 
 .client__pict {
-  display: inline-block;
+  display: block;
   fill: #AFB1B8;
   width: 106px;
   height: 60px;
-  margin: 16px 52px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
