@@ -40,6 +40,10 @@ ul {
   color: #000000;
 }
 
+.is-open .logo {
+  display: none;
+}
+
 .logo__studio {
   color: #FFFFFF;
 }
@@ -110,7 +114,7 @@ header {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background-color: palegoldenrod;
   padding: 20px;
   text-align: center;
@@ -119,6 +123,10 @@ header {
 
 .navigation__menu--mobile.is-open {
   display: block;
+}
+
+.navigation__menu--mobile.is-open .logo {
+  display: none;
 }
 
 .navigation__list {
@@ -1426,5 +1434,9 @@ footer {
   letter-spacing: 0.03em;
   color: #212121;
   text-transform: none;
+}
+
+.navigation__menu--mobile.is-open .logo {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
