@@ -39,6 +39,3 @@ ul {
     @include font-set ($font-size: 28px, $font-weight: 700, $line-height: 33px, $color: $main-text-color);
 }
 
-.navigation__menu-button.is-open .logo {
-    display: none;
-}

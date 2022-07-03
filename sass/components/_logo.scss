@@ -17,6 +17,10 @@
     color: $active-color;
 }
 
+.logo__menu {
+    display: none;
+}
+
 // %logo-default {
 //     @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 26px, $line-height: 31px);
 //     display: inline-block;
