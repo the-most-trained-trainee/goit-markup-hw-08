@@ -6,10 +6,6 @@
 .logo {
     @extend %logo-default;
     color: $contrast-color;
-    .is-open & {
-        display: none;
-    }
-    
 }
 
 .logo__studio {

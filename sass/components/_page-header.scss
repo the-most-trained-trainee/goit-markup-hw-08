@@ -60,6 +60,7 @@ header {
 
 
 
+
 .navigation__menu--mobile {
     display: none;
     position: absolute;
@@ -73,9 +74,6 @@ header {
     font-size: 20px;
     &.is-open {
         display: block;
-        & .logo {
-            display: none;
-        }
     }
 }
 

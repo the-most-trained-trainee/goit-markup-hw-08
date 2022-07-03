@@ -40,10 +40,6 @@ ul {
   color: #000000;
 }
 
-.is-open .logo {
-  display: none;
-}
-
 .logo__studio {
   color: #FFFFFF;
 }
@@ -123,10 +119,6 @@ header {
 
 .navigation__menu--mobile.is-open {
   display: block;
-}
-
-.navigation__menu--mobile.is-open .logo {
-  display: none;
 }
 
 .navigation__list {
@@ -1436,7 +1428,7 @@ footer {
   text-transform: none;
 }
 
-.navigation__menu--mobile.is-open .logo {
+.navigation__menu-button.is-open .logo {
   display: none;
 }
 /*# sourceMappingURL=main.css.map */
