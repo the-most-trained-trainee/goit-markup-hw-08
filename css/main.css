@@ -163,12 +163,18 @@ header {
 }
 
 .contacts {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   margin-left: 40px;
   margin-bottom: 64px;
 }
 
-.contacts > li:first-child {
+.contacts > li:last-child {
   margin-bottom: 32px;
 }
 
@@ -188,11 +194,13 @@ header {
 }
 
 .contacts__icon--mailing {
+  display: none;
   width: 16px;
   height: 12px;
 }
 
 .contacts__icon--calling {
+  display: none;
   width: 10px;
   height: 16px;
 }
@@ -220,6 +228,51 @@ header {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
+}
+
+.contacts__social-networks {
+  margin-left: 40px;
+}
+
+.contacts__social-networks > li {
+  display: inline-block;
+}
+
+.contacts__social-networks a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.contacts__phone {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-transform: none;
+}
+
+.contacts__e-mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-transform: none;
 }
 
 footer {

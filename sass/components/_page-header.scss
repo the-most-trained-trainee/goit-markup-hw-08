@@ -152,10 +152,11 @@ header {
 
 
 .contacts {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
     margin-left: 40px;
     margin-bottom: 64px;
-    & > li:first-child {
+    & > li:last-child {
         margin-bottom: 32px;
     }
     // & li:last-child {
@@ -175,11 +176,13 @@ header {
     }
 }
 .contacts__icon--mailing {
+    display: none;
     width: 16px;
     height: 12px;
 }
 
 .contacts__icon--calling {
+    display: none;
     width: 10px;
     height: 16px;
 }
@@ -193,4 +196,23 @@ header {
     &:hover, &:focus {
         color: $active-color;
     }
+}
+
+.contacts__social-networks {
+    margin-left: 40px;
+}
+.contacts__social-networks > li {
+    display: inline-block;
+}
+.contacts__social-networks a {
+    @include font-set ($font-weight: 500, $font-size: 18px, $line-height: 22px, $letter-spacing: 0.02em, $color: $active-color);
+    text-decoration: none;
+}
+
+.contacts__phone {
+    @include font-set ($font-family: 'Roboto', $font-weight: 500, $font-size: 34px, $line-height: 40px, $text-align: left, $letter-spacing: 0.02em, $color: $active-color);
+}
+
+.contacts__e-mail {
+    @include font-set ($font-family: 'Roboto', $font-weight: 500, $font-size: 24px, $line-height: 28px, $text-align: left, $letter-spacing: 0.02em, $color: $secondary-text-color);
 }
