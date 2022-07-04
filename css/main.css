@@ -1,4 +1,4 @@
-ul, li, h1, h2, h3, h4, p, img {
+ul, li, h1, h2, h3, h4, p, img, td, table, tr {
   padding: 0;
   margin: 0;
   border: 0;
@@ -128,7 +128,7 @@ header {
   display: block;
   margin-top: 48px;
   margin-left: 40px;
-  margin-bottom: 30vh;
+  margin-bottom: 25vh;
 }
 
 .navigation__list > li:not(:last-child) {
@@ -234,10 +234,6 @@ header {
   margin-left: 40px;
 }
 
-.contacts__social-networks > li {
-  display: inline-block;
-}
-
 .contacts__social-networks a {
   font-family: "Roboto";
   font-style: normal;
@@ -249,6 +245,16 @@ header {
   color: #2196F3;
   text-transform: none;
   text-decoration: none;
+}
+
+.contacts__social-networks td {
+  display: inline-block;
+}
+
+.contacts__social-networks td:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .contacts__phone {

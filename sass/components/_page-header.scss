@@ -78,7 +78,7 @@ header {
     display: block;
     margin-top: 48px;
     margin-left: 40px;
-    margin-bottom: 30vh;
+    margin-bottom: 25vh;
 
     & > li:not(:last-child) {
         margin-bottom: 32px;
@@ -201,12 +201,20 @@ header {
 .contacts__social-networks {
     margin-left: 40px;
 }
-.contacts__social-networks > li {
-    display: inline-block;
-}
+
 .contacts__social-networks a {
     @include font-set ($font-weight: 500, $font-size: 18px, $line-height: 22px, $letter-spacing: 0.02em, $color: $active-color);
     text-decoration: none;
+}
+
+.contacts__social-networks td {
+    display: inline-block;
+}
+
+.contacts__social-networks td:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    padding-right: 10px;    
 }
 
 .contacts__phone {
