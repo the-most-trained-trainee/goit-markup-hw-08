@@ -34,6 +34,9 @@ header {
     width: 40px;
     height: 40px;
     fill: $main-text-color;
+    &:hover {
+        fill: $active-color;
+    }
 }
 
 .navigation__menu-button {
@@ -79,6 +82,7 @@ header {
     margin-top: 48px;
     margin-left: 40px;
     margin-bottom: 25vh;
+    transition: fill $cubic-standard;
 
     & > li:not(:last-child) {
         margin-bottom: 32px;
@@ -224,3 +228,4 @@ header {
 .contacts__e-mail {
     @include font-set ($font-family: 'Roboto', $font-weight: 500, $font-size: 24px, $line-height: 28px, $text-align: left, $letter-spacing: 0.02em, $color: $secondary-text-color);
 }
+

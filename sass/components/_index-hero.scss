@@ -75,8 +75,7 @@
     position: absolute;
     display: block;
     transform: translate(-50%,-50%);
-    width: 528px;
-    height: 581px;
+    margin: 93px 15px;
     top: 50%;
     left: 50%;
     background-color: $main-color;
@@ -130,7 +129,6 @@
 
 .form {
     display: inline-block;
-    width: 448px;
     margin-left: 39px;
     margin-right: 41px;
     margin-top: 41px;
