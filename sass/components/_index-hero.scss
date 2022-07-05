@@ -127,6 +127,7 @@
     .modal__close:focus & {
         fill: $active-color;
     }
+    z-index: 10;
 }
 
 

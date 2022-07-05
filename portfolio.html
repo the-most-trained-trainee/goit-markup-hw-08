@@ -15,43 +15,59 @@
       <div class="container header__container">
         <nav class="navigation">
           <a href="/index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
-          <ul class="navigation__list">
-            <li>
-              <a href="./index.html" class="navigation__link--active">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="navigation__link--inactive">Портфолио</a>
-            </li>
-            <li>
-              <a href="" class="navigation__link--inactive">Контакты</a>
-            </li>
-          </ul>
-          <svg class="navigation__menu--mobile">
-            <use href="./images/symbol-defs.svg#mobile-menu-open"></use>
-          </svg>
+
+          <button type="button" class="navigation__menu-button is-open" aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg class="navigation__menu--icon">
+              <use class="navigation__menu--open" href="./images/symbol-defs.svg#mobile-menu-close"></use>
+              <use class="navigation__menu--close" href="./images/symbol-defs.svg#mobile-menu-open"></use>
+            </svg>
+          </button>
+
+          <div class="navigation__menu--mobile" id="menu-container" data-menu>
+
+          
+            </button>
+
+
+            <ul class="navigation__list">
+              <li>
+                <a href="./index.html" class="navigation__link--active">Студия</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="navigation__link--inactive">Портфолио</a>
+              </li>
+              <li>
+                <a href="" class="navigation__link--inactive">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts">
+              <li>
+                <a href="mailto:info@devstudio.com" class="contacts__link">
+                  <svg class="contacts__icon contacts__icon--mailing">
+                    <use href="./images/symbol-defs.svg#contact1"></use>
+                  </svg>
+                  <div class="contacts__e-mail">info@devstudio.com</div>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg class="contacts__icon contacts__icon--calling">
+                    <use href="./images/symbol-defs.svg#contact2"></use>
+                  </svg>
+                  <div class="contacts__phone">+38 096 111 11 11</div>
+                </a>
+              </li>
+            </ul>
+            <table class="contacts__social-networks">
+              <tr>
+                <td><a href="">Instagram</a></td>
+                <td><a href="">Twitter</a></td>
+                <td><a href="">Facebook</a></td>
+                <td><a href="">LinkedIn</a></td>
+              </tr>
+            </table>
+          </div>
         </nav>
-        
-        <!-- <svg class="navigation__menu--mobile">
-          <use href="./images/symbol-defs.svg#mobile-menu-close"></use>
-        </svg> -->
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon contacts__icon--mailing">
-                <use href="./images/symbol-defs.svg#contact1"></use>
-              </svg>
-              <div class="contacts__phone">info@devstudio.com</div>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon contacts__icon--calling">
-                <use href="./images/symbol-defs.svg#contact2"></use>
-              </svg>
-              <div class="contacts__phone">+38 096 111 11 11</div>
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -299,5 +315,6 @@
         </form>
       </div>
     </footer>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

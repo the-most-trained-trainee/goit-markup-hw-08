@@ -81,10 +81,13 @@
     display: block;
     position: absolute;
     bottom: 0;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 77px;
-    padding-bottom: 77px;
+    // padding-left: 24px;
+    // padding-right: 24px;
+    // padding-top: 77px;
+    // padding-bottom: 77px;
+    height: 100%;
+    align-self: center;
+    
 
     @include font-set ($font-size: 18px, $line-height: 28px, $text-align: left);    
     background: rgba(33, 150, 243, 0.9);
