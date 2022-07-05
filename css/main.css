@@ -682,8 +682,8 @@ footer {
 }
 
 .modal {
-  padding: 20px;
   background-color: #fff;
+  border-radius: 4px;
 }
 
 .modal__background {
@@ -736,9 +736,7 @@ footer {
 
 .form {
   display: block;
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding: 40px;
 }
 
 .form__heading {
@@ -746,7 +744,7 @@ footer {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -905,7 +903,7 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -918,7 +916,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  margin-left: 13px;
 }
 
 .field__gtc--following {
