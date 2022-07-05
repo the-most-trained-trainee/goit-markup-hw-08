@@ -6,6 +6,9 @@
     & h2 {
         display: none;
     }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
 }
 
 .qualities__list {
@@ -18,7 +21,7 @@
         flex-direction: column;
         justify-content: center;
 
-        &:nth-child(4n) {
+        &:nth-child(4n), &:nth-child(3n) {
             margin-bottom: 0;
         } 
     }
@@ -31,6 +34,18 @@
         margin-top: 25px;
         margin-bottom: 25px;
     }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        & li {
+            display: block;
+            // display: inline-flex;
+            width: 354px;
+        }
+    }
 }
 
 .qualities__card {
@@ -42,6 +57,11 @@
     margin-bottom: 30px;
     transition: box-shadow $cubic-standard;
     border-radius: 4px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .qualities__heading {

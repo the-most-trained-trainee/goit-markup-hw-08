@@ -14,6 +14,11 @@ header {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 // .header__container {
 //     display: flex;
@@ -24,10 +29,12 @@ header {
 // }
 
 .navigation {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 
 .navigation__menu--icon {
@@ -37,6 +44,9 @@ header {
     &:hover {
         fill: $active-color;
     }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .navigation__menu-button {
@@ -45,7 +55,6 @@ header {
     padding: 0;
     border: none;
     background-color: transparent;
-
     z-index: 9;
 }
 
@@ -64,31 +73,54 @@ header {
 
 .navigation__menu--mobile {
     display: none;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: palegoldenrod;
-    z-index: 1;
     &.is-open {
         display: block;
+    }
+    @media screen and (max-width: 767px) {
+        top: 0%;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color;
+    }
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 78px;
     }
 }
 
 
 .navigation__list {
+  
     display: block;
     margin-top: 48px;
     margin-left: 40px;
     margin-bottom: 25vh;
     transition: fill $cubic-standard;
 
-    & > li:not(:last-child) {
-        margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        & > li:not(:last-child) {
+            margin-bottom: 32px;
+        }
     }
     & a:hover {
         color: $active-color;
+    }
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        & > li {
+            display: inline-block;
+        }
+        & > li:not(:last-child) {
+            margin-right: 50px;
+        }
     }
     // & > li {
     //     display: block;
@@ -134,24 +166,39 @@ header {
     &:hover, &:focus {
         color: $active-color;
     }
+    @media screen and (min-width: 768px) {
+        display: block;
+        @include font-set ($font-family: 'Roboto', $font-weight: 500, $letter-spacing: 0.02em, $color: $active-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+       
+    }
 }
 
-// .navigation__link--active {
 
-    // color:$active-color;
-    // &::after {
-    //     display: block;
-    //     content: "";
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 4px;
-    //     background-color:$active-color;
-    //     left: 0;
-    //     bottom: 0;
-    //     border-radius: 2px;
-    //     margin-bottom: -1px;
-    // }
-// }
+@media screen and (min-width: 768px) {
+    .navigation__link--inactive {
+        color: $main-text-color;
+    }
+    .navigation__link--active {
+        position: relative;
+    }
+
+    .navigation__link--active::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color:$active-color;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        margin-bottom: -1px;   
+    }
+}
+
+
 
 
 
@@ -162,33 +209,60 @@ header {
     margin-bottom: 64px;
     & > li:last-child {
         margin-bottom: 32px;
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+            margin-bottom: 0;
+        }
     }
-    // & li:last-child {
-    //     margin-left: 30px;
-    // }
+    @media screen and (min-width: 768px) {
+        margin-left: 70px;
+        margin-right: 0;
+        margin-bottom: 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: center;
+        & li {
+            display: block;
+        }
+        & li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .contacts__icon {
     fill: $secondary-text-color;
     margin-right: 10px;
     transition: fill $cubic-standard;
+
+
     .contacts__link:hover & {
         fill: $active-color;
     }
     .contacts__link:focus & {
         fill: $active-color;
     }
+    @media screen and (min-width: 768px) {
+        margin-right: 8;
+    }
 }
+
 .contacts__icon--mailing {
     display: none;
     width: 16px;
     height: 12px;
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
 }
 
 .contacts__icon--calling {
     display: none;
     width: 10px;
     height: 16px;
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
 }
 
 .contacts__link {
@@ -204,6 +278,9 @@ header {
 
 .contacts__social-networks {
     margin-left: 40px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .contacts__social-networks a {
@@ -213,6 +290,9 @@ header {
 
 .contacts__social-networks td {
     display: inline-block;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .contacts__social-networks td:not(:last-child) {
@@ -223,9 +303,14 @@ header {
 
 .contacts__phone {
     @include font-set ($font-family: 'Roboto', $font-weight: 500, $font-size: 34px, $line-height: 40px, $text-align: left, $letter-spacing: 0.02em, $color: $active-color);
+    @media screen and (min-width: 768px) {
+        @include font-set ($font-weight: 500, $font-size: 12px, $line-height: 14px, $letter-spacing: 0.02em, $color: $secondary-text-color);
+    }
 }
 
 .contacts__e-mail {
     @include font-set ($font-family: 'Roboto', $font-weight: 500, $font-size: 24px, $line-height: 28px, $text-align: left, $letter-spacing: 0.02em, $color: $secondary-text-color);
+    @media screen and (min-width: 768px) {
+        @include font-set ($font-weight: 500, $font-size: 12px, $line-height: 14px, $letter-spacing: 0.02em, $color: $secondary-text-color);
+    }
 }
-

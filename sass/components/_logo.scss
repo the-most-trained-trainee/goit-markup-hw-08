@@ -1,6 +1,9 @@
 %logo-default {
     @include font-set ($font-family: 'Raleway', $font-weight: 700, $font-size: 24px, $line-height: 28px);
     text-decoration: none;
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
 }
 
 .logo {
