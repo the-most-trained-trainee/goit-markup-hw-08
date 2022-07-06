@@ -17,6 +17,11 @@
     @media screen and (min-width: 768px) {
         margin-top: 0;
     }
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 
@@ -41,6 +46,10 @@
         &:nth-child(3), &:nth-child(4) {
             margin-bottom: 0;
         }
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        margin: 0;
     }
 }
 

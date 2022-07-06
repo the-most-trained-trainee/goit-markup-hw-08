@@ -23,6 +23,10 @@ footer {
         margin-right: 165px;
         // width: 300px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 77px;
+    }
 }
 
 .footer__logo--mobile {
@@ -31,6 +35,9 @@ footer {
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
 }
 
 
@@ -152,12 +159,20 @@ footer {
         margin-right: auto;
         width: 450px;
     }
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        margin-top: 0;
+        margin-left: 93px;
+    }
 }
 
 .footer-form__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .footer-form__heading {
@@ -214,6 +229,9 @@ footer {
     }
     .footer-form__input-focus:focus-within & {
         border-color: $active-color;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 208px;
     }
 }
 

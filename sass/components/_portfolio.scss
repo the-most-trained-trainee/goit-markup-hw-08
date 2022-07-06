@@ -45,7 +45,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        // gap: 30px;
+        gap: 30px;
     }
 }
 
@@ -63,14 +63,12 @@
     background-color: $main-color;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
-        width: 46%;
-        height: auto;
-        // &:last-child {
-        //     margin-bottom: 0;
-        // }
-        // flex-grow: 1;
+        height: auto;       
         margin-bottom: 0;
-        width: calc((100%-30px)/2);
+        width: calc((100% - 2 * 15px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
     }
 }
 
@@ -124,6 +122,8 @@
 
  .project__image {
      display: block;
+     width: 100%;     
+     height: auto;
  }
 
  .invisible-heading {

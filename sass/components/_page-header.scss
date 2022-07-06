@@ -19,6 +19,9 @@ header {
         padding-top: 0;
         padding-bottom: 0;
     }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
 // .header__container {
 //     display: flex;
@@ -33,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     @media screen and (min-width: 768px) {
-        display: block;
+        justify-content: flex-start;
     }
 }
 
@@ -89,6 +92,9 @@ header {
         display: inline-flex;
         align-items: center;
         margin-left: 78px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -209,10 +215,6 @@ header {
     margin-bottom: 64px;
     & > li:last-child {
         margin-bottom: 32px;
-        @media screen and (min-width: 768px) {
-            display: inline-block;
-            margin-bottom: 0;
-        }
     }
     @media screen and (min-width: 768px) {
         margin-left: 70px;
@@ -227,6 +229,19 @@ header {
         & li:not(:last-child) {
             margin-bottom: 10px;
         }
+        & > li:last-child {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 305px;
+        & li:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
     }
 }
 
@@ -238,6 +253,7 @@ header {
 
     .contacts__link:hover & {
         fill: $active-color;
+        
     }
     .contacts__link:focus & {
         fill: $active-color;
@@ -313,4 +329,5 @@ header {
     @media screen and (min-width: 768px) {
         @include font-set ($font-weight: 500, $font-size: 12px, $line-height: 14px, $letter-spacing: 0.02em, $color: $secondary-text-color);
     }
+    
 }

@@ -20,6 +20,11 @@
             margin-bottom: 0;
         }
     }
+    @media screen and (min-width: 1200px) {
+        & li {
+            width: 170px;
+        }
+    }
 }
 
 .client__card {
