@@ -13,7 +13,7 @@
     @media screen and (min-width: 768px) {
         margin-top: 30px;
         & li {
-            width: 29.43%;
+            width: 226px;
             margin-bottom: 30px;
         }
         & li:nth-child(4) {
@@ -46,8 +46,8 @@
     height: 60px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     
     transition: fill $cubic-standard;
     .client__card:hover & {

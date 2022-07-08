@@ -90,7 +90,15 @@
 .modal {
     background-color: #fff;
     border-radius: 4px;
-
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+    
     // position: absolute;
     // display: block;
     // transform: translate(-50%,-50%);
@@ -100,8 +108,8 @@
     // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     // transform: translate(-50%, -50%) scale (1);
     // transition: transform $cubic-standard;
+    // transform: translate(-50%, -50%) scale(1.5);
     // .backdrop.is-hidden & {
-    //     transform: translate(-50%, -50%) scale(1.5);
     // }
 }
 
@@ -155,6 +163,9 @@
 .form__heading {
     @include font-set ($font-weight: 700, $font-size: 20px, $line-height: 30px, $color: $main-text-color);
     margin-bottom: 12px;
+    @media screen and (min-width: 1200px) {
+        @include font-set ($font-weight: 700, $font-size: 20px, $line-height: 24px, $color: $main-text-color);
+    }
 }
 
 .form__field-list {
@@ -169,7 +180,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     & label {
-        @include font-set ($line-height: 14px, $text-align: left, $letter-spacing: 0.01em, $color: $secondary-text-color);
+        @include font-set ($font-size: 12px, $line-height: 14px, $text-align: left, $letter-spacing: 0.01em, $color: $secondary-text-color);
         margin-bottom: 4px;
     }
 }
@@ -216,7 +227,6 @@
 }
 
 .form__textarea {
-    @include font-set ($text-align: left, $letter-spacing: 0.01em, $color: $main-text-color);
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -224,6 +234,12 @@
     padding: 12px 16px;
     &:hover, &:focus {
         border-color: $active-color;
+    }
+    &::placeholder {
+        @include font-set ($text-align: left, $letter-spacing: 0.01em, $color: $text-area-color);
+        @media screen and (min-width: 1200px) {
+           @include font-set ($font-size: 12px, $line-height: 14px, $text-align: left, $letter-spacing: 0.01em, $color: $text-area-color);
+        }
     }
 }
 
@@ -248,19 +264,22 @@
 
 
 .field__gtc {
-    @include font-set ($color: $secondary-text-color);
-
-
+    @include font-set ($font-size: 12px, $line-height: 14px, $text-align: left, $color: $secondary-text-color);
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    // margin-left: 13px;
+    @media screen and (min-width: 1200px) {
+        @include font-set ($font-size: 14px, $line-height: 24px, $text-align: left, $color: $secondary-text-color);
+    }
 }
 
 .field__gtc--following {
-    @include font-set ($line-height: 24px, $color: $active-color);
+    @include font-set ($font-size: 12px, $line-height: 14px, $text-align: left, $color: $active-color);
     text-decoration-line: underline;
+        @media screen and (min-width: 1200px) {
+        @include font-set ($font-size: 14px, $line-height: 24px, $text-align: left, $color: $active-color);
+    }
 }
 
 #field__gtc--checking {
@@ -268,7 +287,7 @@
     width: 16px;
     height: 15px;
     z-index: 1;
-    margin-right: 7px;
+    margin-right: 8px;
     appearance: none;
 }
 
