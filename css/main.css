@@ -187,7 +187,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 78px;
+    margin-left: 88px;
   }
 }
 
@@ -488,6 +488,15 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__link:hover .contacts__phone {
+    color: #2196F3;
+  }
+  .contacts__link:focus .contacts__phone {
+    color: #2196F3;
+  }
+}
+
 .contacts__e-mail {
   font-family: "Roboto";
   font-style: normal;
@@ -511,6 +520,15 @@ header {
     letter-spacing: 0.02em;
     color: #757575;
     text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link:hover .contacts__e-mail {
+    color: #2196F3;
+  }
+  .contacts__link:focus .contacts__e-mail {
+    color: #2196F3;
   }
 }
 
@@ -935,10 +953,32 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-background-2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-background-2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-background-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-background-2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop-background-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-background-2x.jpg);
   }
 }
 
@@ -953,6 +993,20 @@ footer {
   color: #FFFFFF;
   text-transform: uppercase;
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
 }
 
 .hero-section__button {
@@ -1955,5 +2009,19 @@ footer {
   letter-spacing: 0.03em;
   color: #212121;
   text-transform: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-transform: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

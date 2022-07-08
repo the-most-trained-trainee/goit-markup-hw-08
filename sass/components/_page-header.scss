@@ -91,7 +91,7 @@ header {
     @media screen and (min-width: 768px) {
         display: inline-flex;
         align-items: center;
-        margin-left: 78px;
+        margin-left: 88px;
     }
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
@@ -322,6 +322,14 @@ header {
     @media screen and (min-width: 768px) {
         @include font-set ($font-weight: 500, $font-size: 12px, $line-height: 14px, $letter-spacing: 0.02em, $color: $secondary-text-color);
     }
+    @media screen and (min-width: 1200px) {
+        .contacts__link:hover & {
+            color: $active-color;
+        }
+        .contacts__link:focus & {
+            color: $active-color;
+        }
+    }
 }
 
 .contacts__e-mail {
@@ -329,5 +337,12 @@ header {
     @media screen and (min-width: 768px) {
         @include font-set ($font-weight: 500, $font-size: 12px, $line-height: 14px, $letter-spacing: 0.02em, $color: $secondary-text-color);
     }
-    
+    @media screen and (min-width: 1200px) {
+        .contacts__link:hover & {
+            color: $active-color;
+        }
+        .contacts__link:focus & {
+            color: $active-color;
+        }
+    }   
 }

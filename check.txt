@@ -1,0 +1,12 @@
+- header - OK
+- hero - OK
+- qualities - OK
+- we-do
+
+
+
+- footer
+- clients
+- team
+- logo
+- portfolio
