@@ -35,6 +35,19 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .logo, .logo__studio {
   font-family: "Raleway";
   font-style: normal;
@@ -72,12 +85,11 @@ ul {
 
 header {
   border-bottom: 1px solid #ECECEC;
+  position: relative;
 }
 
 .header__container {
-  position: relative;
   display: block;
-  max-width: 480px;
   padding-top: 10px;
   padding-bottom: 9px;
   padding-left: 15px;
@@ -194,6 +206,29 @@ header {
 @media screen and (min-width: 1200px) {
   .navigation__menu--mobile {
     margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__menu--centered {
+    display: block;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__menu--centered {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -627,6 +662,23 @@ footer {
     display: inline-flex;
   }
   .contact-details a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-details li {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-details {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .contact-details a {
     display: inline-block;
   }
   .contact-details li {
@@ -958,7 +1010,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 480px;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -966,15 +1017,8 @@ footer {
   padding-bottom: 118px;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-section {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -1720,6 +1764,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    margin-top: 50px;
+  }
+}
+
 .team__background {
   background-color: #F5F4FA;
   margin-top: 30px;
@@ -1932,8 +1982,12 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  .client {
+    margin-top: 50px;
+  }
   .client li {
     width: 170px;
+    margin-bottom: 0;
   }
 }
 
@@ -2002,6 +2056,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .selection {
+    margin-bottom: 50px;
+  }
+}
+
 .selection__button {
   font-family: "Roboto";
   font-style: normal;
@@ -2040,7 +2100,6 @@ footer {
 
 .projects {
   display: block;
-  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2127,8 +2186,8 @@ footer {
 }
 
 .projects__thumb {
-  position: relative;
   display: block;
+  position: relative;
   overflow: hidden;
 }
 
@@ -2176,7 +2235,18 @@ footer {
 .project__image {
   display: block;
   width: 100%;
-  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .project__image {
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__image {
+    height: 294px;
+  }
 }
 
 .invisible-heading {

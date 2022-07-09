@@ -1,12 +1,13 @@
 header {
     border-bottom: 1px solid $border-color;
+    position: relative;
 }
 
 .header__container {
-    position: relative;
+    // position: relative;
 
     display: block;
-    max-width: 480px;
+    // max-width: 480px;
     
     padding-top: 10px;
     padding-bottom: 9px;
@@ -23,13 +24,6 @@ header {
         max-width: 1200px;
     }
 }
-// .header__container {
-//     display: flex;
-//     align-items: center;
-//     @media screen and (min-width: 480px) and (max-width: 768px) {
-//         justify-content: space-between;
-//     }
-// }
 
 .navigation {
     display: flex;
@@ -97,6 +91,23 @@ header {
         margin-left: 93px;
     }
 }
+
+.navigation__menu--centered {
+    @media screen and (max-width: 767px) {
+        display: block;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+        // display: inline-block;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
 
 
 .navigation__list {

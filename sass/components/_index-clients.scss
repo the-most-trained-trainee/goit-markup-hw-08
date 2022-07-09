@@ -21,8 +21,10 @@
         }
     }
     @media screen and (min-width: 1200px) {
+        margin-top: 50px;
         & li {
             width: 170px;
+            margin-bottom: 0;
         }
     }
 }
